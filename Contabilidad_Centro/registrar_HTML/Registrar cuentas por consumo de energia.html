@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.1.0-dist/css/bootstrap.min.css">
+    <title>cobranza de consumo de energia </title>
+</head>
+
+<body>
+    <div class="text-center text-primary">
+        <h1>Registrar cuentas por consumo de energia</h1>
+    </div>
+
+
+    <div><br></div>
+    <form method="POST" name="form-work" action="../Guardar_PHP/Registrar cuentas por consumo de energia.php">
+        <div class="container">
+
+            <div class="form-group">
+                <!-- numero de stand-->
+                <label for="NumStand" class="control-label">Numero de Stand</label>
+                <input type="text" class="form-control" id="NumStand" name="NumStand" placeholder="Numero de Stand" required>
+            </div>
+
+            <div><br></div>
+
+            <div class="form-group">
+                <!-- Dueño del Stand -->
+                <label for="DueStand" class="control-label">Dueño del Stand</label>
+                <input type="text" class="form-control" id="DueStand" name="DueStand" placeholder="Dueño del Stand" required>
+            </div>
+
+            <div><br></div>
+
+            <div class="form-group">
+                <!-- Cantidad de tiempo acumulado de no pagar el servicio de luz -->
+                <label for="NoPagoLuz" class="control-label">Cantidad de tiempo acumulado de no pagar el consumo de
+                    energia</label>
+                <input type="text" class="form-control" id="NoPagoLuz" name="NoPagoLuz"
+                    placeholder="Cantidad de tiempo acumulado de no pagar el consumo de energia" required>
+            </div>
+
+            <div><br></div>
+
+            <div class="form-group">
+                <!-- Pago total de consumo de energia -->
+                <label for="ConEner" class="control-label">Pago total de consumo de energia</label>
+                <input type="number" class="form-control" id="ConEner" name="ConEner"
+                    placeholder="Pago total de consumo de energia" required>
+            </div>
+
+
+
+            <div><br></div>
+
+
+
+
+            <div class="form-group">
+                <!-- boton de guardar -->
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </div>
+
+        </div>
+    </form>
+
+
+</body>
+
+</html>
